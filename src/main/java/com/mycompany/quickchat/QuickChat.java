@@ -110,11 +110,12 @@ public class QuickChat {
             System.out.println("3:exit");
             System.out.println("Enter menu option");
             userChoice=enterMenu.nextInt();
-            {
+            switch(userChoice){
                 case 1:
                     QuickChat.registerUser();
                     //Registeroutput = 
-                     System.out.println(QuickChat.RegisterOutput);
+                     
+                    
                     break;
                 case 2:
                     QuickChat.loginUser();
