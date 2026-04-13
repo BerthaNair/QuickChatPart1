@@ -114,8 +114,7 @@ public class QuickChat {
                 case 1:
                     QuickChat.registerUser();
                     //Registeroutput = 
-                     
-                    
+                     System.out.println(QuickChat.RegisterOutput);
                     break;
                 case 2:
                     QuickChat.loginUser();
@@ -123,7 +122,8 @@ public class QuickChat {
                 case 3:
                     System.out.println("GOODBYE");
                     break;
-                default:System.out.println("Invalid choice");
+                 default:System.out.println("Invalid choice");
+                    
             }}while(userChoice!=3);
                enterMenu.close();
                 
