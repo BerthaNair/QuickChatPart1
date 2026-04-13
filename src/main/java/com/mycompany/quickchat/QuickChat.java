@@ -72,6 +72,7 @@ class Login {
   }
    boolean loginUser(){    
       
+       Scanner input= new Scanner(System.in);
        
       System.out.println("==Login==");
       System.out.println("Enter your username");
@@ -97,7 +98,8 @@ class Login {
 public class QuickChat {
 
     public static void main(String[] args) {
-          Scanner enterMenu=new Scanner(System.in);
+         
+        
         Login QuickChat=new Login();
         int userChoice;
         //String Reg;
