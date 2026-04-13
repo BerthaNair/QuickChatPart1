@@ -43,7 +43,7 @@ class Login {
   }
    String registerUser(){
       
-      
+      Scanner input =new Scanner(System.in);
       
       System.out.println("===Register===");
       System.out.println("Enter Name and Surname");
@@ -71,7 +71,8 @@ class Login {
       
   }
    boolean loginUser(){    
-      Scanner input= new Scanner(System.in);
+      
+       
       System.out.println("==Login==");
       System.out.println("Enter your username");
       String username=input .nextLine();
