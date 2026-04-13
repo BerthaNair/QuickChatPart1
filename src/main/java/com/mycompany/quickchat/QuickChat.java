@@ -33,7 +33,7 @@ class Login {
         }            
 }
        boolean checkCellphoneNumber(String cellphoneNumber){
-      if (cellphoneNumber.contains("+27")&& cellphoneNumber.matches(".*\\d.*")&& cellphoneNumber.length()==12){
+      if (cellphoneNumber.contains ("+27")&& cellphoneNumber.matches(".*\\d.*")&& cellphoneNumber.length()==12){
           System.out.println("cell phone number successfully added");
           return true;
       }else{
@@ -70,7 +70,7 @@ class Login {
       
       
   }
-   void loginUser(){    
+   boolean loginUser(){    
       Scanner input= new Scanner(System.in);
       System.out.println("==Login==");
       System.out.println("Enter your username");
@@ -83,7 +83,8 @@ class Login {
       }else{
           System.out.println("Username or password incorrect, please try again");
       }
-  }
+      return false;
+  } 
           
   
 
@@ -109,7 +110,7 @@ public class QuickChat {
             switch(userChoice){
                 case 1:
                     QuickChat.registerUser();
-                    //Reg = 
+                    //Registeroutput = 
                      System.out.println(QuickChat.RegisterOutput);
                     break;
                 case 2:
