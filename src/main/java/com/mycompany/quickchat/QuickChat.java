@@ -33,7 +33,7 @@ class Login {
         }            
 }
        boolean checkCellphoneNumber(String cellphoneNumber){
-      if (cellphoneNumber.contains ("+27")&& cellphoneNumber.matches(".*\\d.*")&& cellphoneNumber.length()==12){
+      if (cellphoneNumber.contains ("+27")&& cellphoneNumber.substring(3).matches("\\d{9}")) {
           System.out.println("cell phone number successfully added");
           return true;
       }else{
@@ -90,6 +90,7 @@ class Login {
           
   
 
+}
 
  
 
