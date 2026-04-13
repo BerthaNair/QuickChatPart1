@@ -16,7 +16,7 @@ class Login {
     
      boolean checkUsername(String username) {
         if (username.length() ==5 && username.contains("_")){
-            System.out.println("username successfully captured");
+            System.out.print("Username successfully captured");
             return true;
         }else{
             System.out.println("username is not correctly formatted;please ensure that your username contains an underscore and is no more than five characters in lenght");
