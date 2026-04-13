@@ -12,11 +12,11 @@ class Login {
     String Storeusername;
     String Storepassword;
     String StorecellphoneNumber;
-    String RegisterOutput;
+    ;
     
      boolean checkUsername(String username) {
         if (username.length() ==5 && username.contains("_")){
-            System.out.print("Username successfully captured");
+            System.out.println("Username successfully captured");
             return true;
         }else{
             System.out.println("username is not correctly formatted;please ensure that your username contains an underscore and is no more than five characters in lenght");
