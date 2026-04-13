@@ -99,7 +99,7 @@ public class QuickChat {
 
     public static void main(String[] args) {
          
-        
+        Scanner enterMenu=new Scanner(System.in);
         Login QuickChat=new Login();
         int userChoice;
         //String Reg;
@@ -110,7 +110,7 @@ public class QuickChat {
             System.out.println("3:exit");
             System.out.println("Enter menu option");
             userChoice=enterMenu.nextInt();
-            switch(userChoice){
+            {
                 case 1:
                     QuickChat.registerUser();
                     //Registeroutput = 
