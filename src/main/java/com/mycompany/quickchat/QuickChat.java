@@ -24,7 +24,7 @@ class Login {
         }
     }
       boolean checkPassword(String passwordComplexity) {
-        if (password.length()>= 8 && passwordComplexity.chars().anyMatch(c -> Character.isUpperCase(c)) && passwordComplexity.matches(".*\\d+.*")&& passwordComplexity.matches(".*[^A-Za-z0-9].*")){
+        if (passwordComplexity.length()>= 8 && passwordComplexity.chars().anyMatch(c -> Character.isUpperCase(c)) && passwordComplexity.matches(".*\\d+.*")&& passwordComplexity.matches(".*[^A-Za-z0-9].*")){
             System.out.println("password successfully captured");
             return true;
         }else{
@@ -41,7 +41,7 @@ class Login {
           return false;
       }
   }
-   String registerUser(){
+   void registerUser(){
       
       Scanner input =new Scanner(System.in);
       
