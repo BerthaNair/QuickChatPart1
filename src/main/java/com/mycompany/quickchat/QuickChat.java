@@ -41,9 +41,9 @@ class Login {
           return false;
       }
   }
-   void registerUser(){
+   String registerUser(){
       
-      Scanner input =new Scanner(System.in);
+      
       
       System.out.println("===Register===");
       System.out.println("Enter Name and Surname");
